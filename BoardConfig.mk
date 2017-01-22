@@ -17,6 +17,8 @@
 include device/lge/g2-common/BoardConfigCommon.mk
 
 TARGET_KERNEL_CONFIG := crdroid_d800_defconfig
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
 TARGET_OTA_ASSERT_DEVICE := d800,g2,galbi
 
